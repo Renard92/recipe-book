@@ -1,0 +1,89 @@
+{
+  "data": {
+    "recipes": [
+      {
+        "id": "a4238e2c-d101-47a4-bba7-9f8dbc4da619",
+        "name": "Recipe A",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "imagePath": "https://img.bestrecipes.com.au/RCK3slSo/h300-w400-cscale/br-api/asset/20771/super-easy-pizza-dough-recipe.jpg",
+        "ingredients": [
+          {
+            "id": "b4238e2c-d101-47a4-bba7-9f8dbc4da619",
+            "name": "Meat",
+            "amount": 1
+          },
+          {
+            "id": "c4238e2c-d101-47a4-bba7-9f8dbc4da619",
+            "name": "French Fries",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "id": "d4238e2c-d101-47a4-bba7-9f8dbc4da619",
+        "name": "Recipe B",
+        "description": "Lorem ipsum dolor sit amet, consectet. Ut enim ad minim veniam, quis nostrud ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat mollit anim id est laborum",
+        "imagePath": "https://img.bestrecipes.com.au/355N3LIw/h300-w400-cscale/br-api/asset/23733/spanish-garlic-prawns-recipe.jpg",
+        "ingredients": [
+          {
+            "id": "e4238e2c-d101-47a4-bba7-9f8dbc4da619",
+            "name": "Buns",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "id": "h4238e2c-d101-47a4-bba7-9f8dbc4da619",
+        "name": "Recipe C",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, veniam, quis ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate deserunt mollit anim id est laborum",
+        "imagePath": "https://img.bestrecipes.com.au/cm34XDZM/h300-w400-cscale-1523587842/br-api/asset/22001/avocado--mango-and-walnut-salad-recipe.jpg",
+        "ingredients": [
+          {
+            "id": "i4238e2c-d101-47a4-bba7-9f8dbc4da619",
+            "name": "Salad",
+            "amount": 6
+          },
+          {
+            "id": "i4238e2c-d101-47a4-bba7-9f8dfg4da619",
+            "name": "Cucumber",
+            "amount": 3
+          },
+          {
+            "id": "i4238e2c-d101-07a4-bba7-9f8df44da619",
+            "name": "Tomatoes",
+            "amount": 6
+          },
+          {
+            "id": "i4238e2c-d101-07a4-bba7-9f8dfg4d9619",
+            "name": "Ketchup",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "id": "a4238e2c-d101-47a4-bba7-9f8dbc4da61a",
+        "name": "Recipe D",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp ad mco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "imagePath": "https://img.bestrecipes.com.au/RCK3slSo/h300-w400-cscale/br-api/asset/20771/super-easy-pizza-dough-recipe.jpg",
+        "ingredients": []
+      }
+    ],
+    "ingredients": [
+      {
+        "id": "f4238e2c-d101-47a4-bba7-9f8dbc4da619",
+        "name": "Apples",
+        "amount": 10
+      },
+      {
+        "id": "g4238e2c-d101-47a4-bba7-9f8dbc4da619",
+        "name": "Bananas",
+        "amount": 20
+      },
+      {
+        "id": "h4238e2c-d101-47a4-bba7-9f8dbc4da619",
+        "name": "Tomatoes",
+        "amount": 30
+      }
+    ]
+  }
+}

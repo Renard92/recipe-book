@@ -1,0 +1,17 @@
+[
+  {
+    "id": "f4238e2c-d101-47a4-bba7-9f8dbc4da619",
+    "name": "Apples",
+    "amount": 10
+  },
+  {
+    "id": "g4238e2c-d101-47a4-bba7-9f8dbc4da619",
+    "name": "Bananas",
+    "amount": 20
+  },
+  {
+    "id": "h4238e2c-d101-47a4-bba7-9f8dbc4da619",
+    "name": "Tomatoes",
+    "amount": 30
+  }
+]

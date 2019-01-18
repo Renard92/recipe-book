@@ -1,0 +1,14 @@
+.space-right {
+  margin-right: 4px;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid #E91E63;
+}
+
+.recipe-image {
+  max-height: 300px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
