@@ -9,7 +9,7 @@ import {AuthenticationService} from "../../shared/service/authentication.service
 })
 export class SignUpComponent implements OnInit {
 
-  private loading = false;
+  public loading = false;
 
   constructor(private authenticationService: AuthenticationService) { }
 
@@ -21,6 +21,10 @@ export class SignUpComponent implements OnInit {
     this.authenticationService
       .signUpWithEmailAndPassword(form.value.email, form.value.password)
       .finally(() => this.loading = false);
+  }
+
+  canSignIn(form: NgForm): boolean {
+    return form.valid || !this.loading;
   }
 
 }

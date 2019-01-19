@@ -9,7 +9,7 @@ import {AuthenticationService} from "../shared/service/authentication.service";
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private recipeBookService: RecipeBookService, private authenticationService: AuthenticationService) { }
+  constructor(private recipeBookService: RecipeBookService, public authenticationService: AuthenticationService) { }
 
   ngOnInit() {
   }

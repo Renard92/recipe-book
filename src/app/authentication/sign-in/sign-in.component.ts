@@ -10,7 +10,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class SignInComponent implements OnInit {
 
-  private loading = false;
+  public loading = false;
   private return: string;
 
   constructor(private authenticationService: AuthenticationService,
@@ -29,6 +29,10 @@ export class SignInComponent implements OnInit {
       .signInpWithEmailAndPassword(form.value.email, form.value.password)
       .then(() => this.router.navigateByUrl(this.return))
       .finally(() => this.loading = false);
+  }
+
+  canSignIn(form: NgForm): boolean {
+    return form.valid || !this.loading;
   }
 
 }
