@@ -16,14 +16,17 @@ import { DropdownDirective } from './shared/directive/dropdown.directive';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
-import {ShoppingListService} from './shopping-list/shopping-list.service';
-import {RecipeService} from './recipes/recipe.service';
-import {AuthenticationService} from './shared/service/authentication.service';
-import {IsAuthenticatedGuard} from './shared/guard/is-authenticated.guard';
-import {CanDeactivateGuard} from './shared/guard/can-deactivate.guard';
-import {CanFindRecipeGuard} from './recipes/guard/can-find-recipe.guard';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { RecipeService } from './recipes/recipe.service';
+import { AuthenticationService } from './shared/service/authentication.service';
+import { IsAuthenticatedGuard } from './shared/guard/is-authenticated.guard';
+import { CanDeactivateGuard } from './shared/guard/can-deactivate.guard';
+import { CanFindRecipeGuard } from './recipes/guard/can-find-recipe.guard';
 import { CurrencyPipe } from './shared/pipe/currency.pipe';
-import {RecipeBookService} from "./shared/service/recipe-book.service";
+import { RecipeBookService } from "./shared/service/recipe-book.service";
+import { SignInComponent } from './authentication/sign-in/sign-in.component';
+import { SignUpComponent } from './authentication/sign-up/sign-up.component';
+import { httpInterceptorProviders } from "./app-http-interceptors";
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import {RecipeBookService} from "./shared/service/recipe-book.service";
     DropdownDirective,
     RecipeStartComponent,
     RecipeEditComponent,
-    CurrencyPipe
+    CurrencyPipe,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,7 @@ import {RecipeBookService} from "./shared/service/recipe-book.service";
     AppRoutingModule
   ],
   providers: [
+    httpInterceptorProviders,
     AuthenticationService,
     ShoppingListService,
     RecipeService,

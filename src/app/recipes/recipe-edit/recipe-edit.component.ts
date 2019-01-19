@@ -112,7 +112,7 @@ export class RecipeEditComponent implements OnInit, CanDeactivateComponent {
     this.initByEditMode();
   }
 
-  onClose() {
+  onBack() {
     if (this.id) {
       this.navigateToRecipeById(this.id);
     } else {

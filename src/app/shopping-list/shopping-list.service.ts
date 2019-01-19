@@ -15,9 +15,7 @@ export class ShoppingListService {
 
   private ingredients: Ingredient[] = [];
 
-  constructor(private http: HttpClient) {
-    this.loadIngredients();
-  }
+  constructor(private http: HttpClient) {}
 
   @MeasureMethod
   @LogMethod

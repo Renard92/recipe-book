@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {RecipeBookService} from '../shared/service/recipe-book.service';
+import {AuthenticationService} from "../shared/service/authentication.service";
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import {RecipeBookService} from '../shared/service/recipe-book.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private recipeBookService: RecipeBookService) { }
+  constructor(private recipeBookService: RecipeBookService, private authenticationService: AuthenticationService) { }
 
   ngOnInit() {
   }
@@ -19,6 +20,10 @@ export class HeaderComponent implements OnInit {
 
   onFetchData() {
     this.recipeBookService.fetchData();
+  }
+
+  onSignOut() {
+    this.authenticationService.signOut();
   }
 
 }

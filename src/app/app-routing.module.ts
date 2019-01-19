@@ -8,6 +8,8 @@ import {RecipeEditComponent} from './recipes/recipe-edit/recipe-edit.component';
 import {CanFindRecipeGuard} from './recipes/guard/can-find-recipe.guard';
 import {IsAuthenticatedGuard} from './shared/guard/is-authenticated.guard';
 import {CanDeactivateGuard} from './shared/guard/can-deactivate.guard';
+import {SignUpComponent} from "./authentication/sign-up/sign-up.component";
+import {SignInComponent} from "./authentication/sign-in/sign-in.component";
 
 const routes: Routes = [
   {
@@ -49,6 +51,14 @@ const routes: Routes = [
     path: 'shopping-list',
     component: ShoppingListComponent,
     canActivate: [IsAuthenticatedGuard]
+  },
+  {
+    path: 'sign-up',
+    component: SignUpComponent
+  },
+  {
+    path: 'sign-in',
+    component: SignInComponent
   },
   {
     path: '**',

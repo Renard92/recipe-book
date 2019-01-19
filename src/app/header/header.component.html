@@ -22,16 +22,29 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li
-          class="dropdown"
-          style="cursor: pointer;"
-          appDropdown>
-          <a class="dropdown-toggle">Manage <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a style="cursor: pointer;" (click)="onSaveData()">Save Data</a></li>
-            <li><a style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a></li>
-          </ul>
-        </li>
+        <ng-template [ngIf]="!authenticationService.isAuthenticated()">
+          <li>
+            <a routerLink="/sign-in">Login</a>
+          </li>
+          <li>
+            <a routerLink="/sign-up">Register</a>
+          </li>
+        </ng-template>
+        <ng-template [ngIf]="authenticationService.isAuthenticated()">
+          <li>
+            <a style="cursor: pointer;" (click)="onSignOut()">Logout</a>
+          </li>
+          <li
+            class="dropdown"
+            style="cursor: pointer;"
+            appDropdown>
+            <a class="dropdown-toggle">Manage <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a style="cursor: pointer;" (click)="onSaveData()">Save Data</a></li>
+              <li><a style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a></li>
+            </ul>
+          </li>
+        </ng-template>
       </ul>
     </div>
   </div>
