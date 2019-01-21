@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +27,7 @@ import { RecipeBookService } from "./shared/service/recipe-book.service";
 import { SignInComponent } from './authentication/sign-in/sign-in.component';
 import { SignUpComponent } from './authentication/sign-up/sign-up.component';
 import { httpInterceptorProviders } from "./app-http-interceptors";
+import { IsNotAuthenticatedGuard } from "./shared/guard/is-not-authenticated.guard";
 
 @NgModule({
   declarations: [
@@ -59,8 +60,10 @@ import { httpInterceptorProviders } from "./app-http-interceptors";
     RecipeService,
     RecipeBookService,
     IsAuthenticatedGuard,
+    IsNotAuthenticatedGuard,
     CanDeactivateGuard,
-    CanFindRecipeGuard
+    CanFindRecipeGuard,
+    // { provide: APP_INITIALIZER, useFactory: onBeforeAppStartFactory, deps: [AuthenticationService], multi: true }
   ],
   bootstrap: [AppComponent]
 })

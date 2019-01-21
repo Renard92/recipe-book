@@ -32,7 +32,7 @@ export class SignInComponent implements OnInit {
   }
 
   canSignIn(form: NgForm): boolean {
-    return form.valid || !this.loading;
+    return form.valid && !this.loading;
   }
 
 }

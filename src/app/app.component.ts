@@ -9,8 +9,11 @@ import * as firebase from 'firebase';
 export class AppComponent implements OnInit{
   title = 'Recipe Book';
 
-  ngOnInit(): void {
+  constructor() {
     this.initializeFirebase();
+  }
+
+  ngOnInit(): void {
   }
 
   private initializeFirebase(): void {
