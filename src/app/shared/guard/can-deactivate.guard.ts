@@ -3,7 +3,6 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot, CanDeactivate } from '@ang
 import { Observable } from 'rxjs';
 
 import { CanDeactivateComponent } from '../interface/can-deactivate-component';
-import {LogMethod} from '../decorator/log-method.function';
 
 @Injectable({
   providedIn: 'root'

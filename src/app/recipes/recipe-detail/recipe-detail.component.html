@@ -41,7 +41,7 @@
         *ngFor="let ingredient of recipe?.ingredients">
         {{ ingredient?.name }}
         <span class="badge">
-          {{ ingredient?.amount | currency }}
+          {{ ingredient?.amount }}
         </span>
       </li>
     </ul>
